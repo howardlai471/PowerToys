@@ -155,10 +155,10 @@ namespace Microsoft.PowerToys.Run.Plugin.WindowsSettings.Helper
         /// <param name="query">The query to calculated the score for the <see cref="Result"/>s.</param>
         private static void SetScores(IEnumerable<Result> resultList, string query)
         {
-            var lowScore = 1_000;
-            var mediumScore = 5_000;
-            var highScore = 10_000;
-            var firstResultScore = 10_500;
+            var lowScore = 1_000/20;
+            var mediumScore = 5_000/20;
+            var highScore = 10_000/20;
+            var firstResultScore = 10_500/20;
 
             foreach (var result in resultList)
             {
